@@ -140,16 +140,30 @@
   .swiper {
     overflow: visible;
   }
-}
-.walkthroughs-cards {
-  display: flex;
-  gap: 1rem;
+  .swiper-slide {
+    display: flex;
+    height: auto;
+  }
 }
 .walkthroughs-card {
+  --bgColor: rgb(255, 117, 74);
   padding: 1rem;
   border-radius: 10px;
-  background: rgb(255, 117, 74);
+  background: var(--bgColor);
   color: black;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: space-between;
+  &._color-1 {
+    --bgColor: rgb(235, 84, 188);
+  }
+  &._color-2 {
+    --bgColor: rgb(128, 236, 255);
+  }
+  &._color-3 {
+    --bgColor: rgb(20, 241, 149);
+  }
   .type {
     font-size: 1rem;
     background: rgba(black, .8);
@@ -165,7 +179,7 @@
   }
   .desc {
     line-height: 1.3;
-    margin-bottom: 4rem;
+    margin-bottom: 1.5rem;
     font-size: 1.3rem;
   }
   .button {

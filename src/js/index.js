@@ -43,8 +43,13 @@ const shadowAnimation = (selector) => {
   }
 }
 const beginerShadowAnimate = shadowAnimation('.beginer .shadow');
-
+const headerEl = document.querySelector('.js-page-header');
 scroll.on('scroll', (args) => {
+  if(args.scroll.y > 10) {
+    headerEl.classList.add('scrolled-down');
+  } else {
+    headerEl.classList.remove('scrolled-down');
+  }
   // Get all current elements : args.currentElements
   if(typeof args.currentElements['hey'] === 'object') {
     let progress = args.currentElements['hey'].progress;
@@ -56,7 +61,7 @@ scroll.on('scroll', (args) => {
 
 const walkthroughsSwiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
-  spaceBetween: 30,
+  spaceBetween: 20,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
