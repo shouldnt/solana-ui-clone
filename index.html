@@ -6,14 +6,14 @@
     <meta name="description" content="Cloning solana.com - no css frameworkd - add animation and smooth scrolling">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="application-name" content="Solana.com UI clone">
-    <link rel="stylesheet" href="static/remix-icon/remixicon.css">
-    <link rel="stylesheet" href="dist/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="static/remix-icon/remixicon.css">
+    <link rel="stylesheet" href="dist/index.css">
   </head>
   <body>
-    <div class="header-spacer"></div>
     <header class="page-header">
       <div class="content">
         <div class="logo">
@@ -46,48 +46,139 @@
 
       </div>
     </header>
-    <div class="main-banner">
-      <div class="bg-img">
-        <img src="static/images/dev-main-banner.png" alt="">
-      </div>
-      <div class="shadow-top"></div>
-      <div class="container">
-        <div class="text">
-          <h1>Developer Resources </h1>
-          <p>A manual for joining the Solana ecosystem. By builders for builders.</p>
-          <div class="buttons">
-            <a href="#" class="explore">Explore the Docs</a>
-            <a href="#" class="build"><i class="ri-arrow-right-down-line"></i> Build now</a>
+
+    <div class="relative" data-scroll-container>
+      <div class="smooth-scroll-warpper">
+        <div class="header-spacer"></div>
+        <div class="main-banner">
+          <div class="bg-img">
+            <img src="static/images/dev-main-banner.png" alt="">
+          </div>
+          <div class="shadow-top"></div>
+          <div class="container">
+            <div class="text">
+              <h1>Developer Resources </h1>
+              <h5>A manual for joining the Solana ecosystem. By builders for builders.</h5>
+              <div class="buttons">
+                <a href="#" class="explore">Explore the Docs</a>
+                <a href="#" class="build"><i class="ri-arrow-right-down-line"></i> Build now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="beginer" data-scroll data-scroll-id="hey">
+          <div class="container">
+            <div class="relative">
+              <div class="shadow"></div>
+              <div class="content">
+                <div class="child title">
+                  <h2>
+                    Solana <br>
+                    for Beginners <br>
+                    Blog Post <br>
+                  </h2>
+                </div>
+                <div class="child desc">
+                  <h5>Learn about high-level topics related to Solana development such as development workflows, programs, myths, dApps (decentralized applications), and client SDKs.</h5>
+                  <a class="button" href="#">Read the blog</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="walkthroughs">
+          <div class="container">
+            <h2 class="text-bold">Walkthroughs</h2>
+            <h5>Solana’s blazing speed and low fees scale as the ecosystem grows without sacrificing censorship resistance or security.</h5>
+          </div>
+          <div class="container">
+            <div class="walkthroughs-swiper-wrapper">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="walkthroughs-card">
+                      <div class="type">beginer</div>
+                      <h4 class="title">
+                        Intro to Programming on Solana
+                      </h4>
+                      <p class="desc">
+                        Introductory guide for building a smart contract on Solana using a simple escrow program example.
+                      </p>
+                      <div class="d-table"><a class="button uppercase" href="#"><i class="ri-arrow-right-down-line"></i> review it</a></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="walkthroughs-card">
+                      <div class="type">beginer</div>
+                      <h4 class="title">
+                        Intro to Programming on Solana
+                      </h4>
+                      <p class="desc">
+                        Introductory guide for building a smart contract on Solana using a simple escrow program example.
+                      </p>
+                      <div class="d-table"><a class="button uppercase" href="#"><i class="ri-arrow-right-down-line"></i> review it</a></div>
+                    </div>
+                  </div><div class="swiper-slide">
+                    <div class="walkthroughs-card">
+                      <div class="type">beginer</div>
+                      <h4 class="title">
+                        Intro to Programming on Solana
+                      </h4>
+                      <p class="desc">
+                        Introductory guide for building a smart contract on Solana using a simple escrow program example.
+                      </p>
+                      <div class="d-table"><a class="button uppercase" href="#"><i class="ri-arrow-right-down-line"></i> review it</a></div>
+                    </div>
+                  </div><div class="swiper-slide">
+                    <div class="walkthroughs-card">
+                      <div class="type">beginer</div>
+                      <h4 class="title">
+                        Intro to Programming on Solana
+                      </h4>
+                      <p class="desc">
+                        Introductory guide for building a smart contract on Solana using a simple escrow program example.
+                      </p>
+                      <div class="d-table"><a class="button uppercase" href="#"><i class="ri-arrow-right-down-line"></i> review it</a></div>
+                    </div>
+                  </div><div class="swiper-slide">
+                    <div class="walkthroughs-card">
+                      <div class="type">beginer</div>
+                      <h4 class="title">
+                        Intro to Programming on Solana
+                      </h4>
+                      <p class="desc">
+                        Introductory guide for building a smart contract on Solana using a simple escrow program example.
+                      </p>
+                      <div class="d-table"><a class="button uppercase" href="#"><i class="ri-arrow-right-down-line"></i> review it</a></div>
+                    </div>
+                  </div><div class="swiper-slide">
+                    <div class="walkthroughs-card">
+                      <div class="type">beginer</div>
+                      <h4 class="title">
+                        Intro to Programming on Solana
+                      </h4>
+                      <p class="desc">
+                        Introductory guide for building a smart contract on Solana using a simple escrow program example.
+                      </p>
+                      <div class="d-table"><a class="button uppercase" href="#"><i class="ri-arrow-right-down-line"></i> review it</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="walkthroughs-cards">
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="beginer">
-      <div class="container">
-        <div class="relative">
-          <div class="shadow"></div>
-          <div class="content">
-            <div class="child title">
-              <h2>
-                Solana <br>
-                for Beginners <br>
-                Blog Post <br>
-              </h2>
-            </div>
-            <div class="child desc">
-              <p>Learn about high-level topics related to Solana development such as development workflows, programs, myths, dApps (decentralized applications), and client SDKs.</p>
-              <a class="button" href="#">Read the blog</a>
-            </div>
 
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="smothscroll">
-    </div>
-
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./lib/locomotive-scroll.min.js"></script>
     <script src="./dist/index.js"></script>
   </body>
 <html>

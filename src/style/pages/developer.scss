@@ -28,8 +28,7 @@
     h1 {
       font-weight: 900;
     }
-    p {
-      font-size: 1.5rem;
+    h5 {
       padding: 40px 0;
       line-height: 1.3;
     }
@@ -79,6 +78,7 @@
 }
 
 .beginer {
+  padding-bottom: 100px;
   .content {
     color: black;
     display: flex;
@@ -104,7 +104,7 @@
   h2 {
     font-weight: bold;
   }
-  p {
+  h5 {
     font-size: 1.5rem;
     line-height: 1.3;
     padding-bottom: 2rem;
@@ -123,5 +123,64 @@
   }
 
   .desc {
+  }
+}
+
+.walkthroughs {
+  h2 {
+    margin-bottom: 1rem;
+  }
+  h5 {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+  &-swiper-wrapper {
+    padding-right: 10%;
+  }
+  .swiper {
+    overflow: visible;
+  }
+}
+.walkthroughs-cards {
+  display: flex;
+  gap: 1rem;
+}
+.walkthroughs-card {
+  padding: 1rem;
+  border-radius: 10px;
+  background: rgb(255, 117, 74);
+  color: black;
+  .type {
+    font-size: 1rem;
+    background: rgba(black, .8);
+    display: table;
+    border-radius: 8px;
+    padding: 0.5rem 0.8rem;
+    color: white;
+  }
+  .title {
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .desc {
+    line-height: 1.3;
+    margin-bottom: 4rem;
+    font-size: 1.3rem;
+  }
+  .button {
+    background: black;
+    border: 1px solid black;
+    color: white;
+    display: flex;
+    align-items: center;
+    i {
+      font-size: 1.5rem;
+      margin-right: 3px;
+    }
+    &:hover {
+      background: white;
+      color: black;
+    }
   }
 }
