@@ -72,3 +72,18 @@ const walkthroughsSwiper = new Swiper(".mySwiper", {
     },
   },
 });
+
+
+const videos = new Swiper(".js-videos-swiper", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  on: {
+    afterInit: function () {
+      scroll.update();
+    },
+  },
+});
