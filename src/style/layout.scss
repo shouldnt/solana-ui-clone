@@ -1,7 +1,6 @@
 body {
   background: black;
   font-family: 'Lato', sans-serif;
-  overflow: hidden;
 }
 .container {
   max-width: 1200px;
@@ -9,4 +8,80 @@ body {
   padding-right: 20px;
   margin: 0 auto;
 }
+.section {
+  padding-top: 8rem;
+  .section-title {
+    margin-bottom: 2rem;
+  }
+}
 
+.page-footer {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .menus {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+  }
+  .menu {
+    h3 {
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: 300;
+      color: rgb(183, 183, 183);
+      padding-bottom: 0.9rem;
+      border-bottom: 1px solid rgba(183, 183, 183, 0.8);
+      margin-bottom: 0.4rem;
+    }
+    ul > li  {
+      margin-bottom: 1rem;
+    }
+    a {
+      color: white;
+      display: flex;
+      align-items: center;
+      i {
+        margin-left: 0.3rem;
+        font-size: 1.3rem;
+        margin-top: 0.1rem;
+      }
+      &:hover p {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  figure {
+    margin-top: 5rem;
+    > .content {
+      padding: 2rem;
+      background: white;
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      a {
+        color: black;
+        letter-spacing: 1px;
+      }
+    }
+    .long-shadow {
+      --shadowColor: white;
+      width: calc(100% - 0.2rem);
+      left: 0.08rem;
+      margin-top: 0.4rem;
+      transform-origin: top center;
+      transform: scale(1, -1);
+      top: 0;
+      bottom: auto;
+      height: 2rem;
+      clip-path: polygon(0 0, 3% 100%, 97% 100%, 100% 0);
+    }
+  }
+}

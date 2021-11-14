@@ -1,0 +1,11 @@
+.long-shadow {
+  --shadowColor: #14f195;
+  background: linear-gradient(180deg,var(--shadowColor) -5.71%,transparent);
+  clip-path: polygon(0 0,5% 100%,95% 100%,100% 0);
+  position: absolute;
+  top: 100%;
+  margin-top: -15px;
+  left: 4px;
+  width: calc(100% - 7px);
+  height: 70px;
+}
